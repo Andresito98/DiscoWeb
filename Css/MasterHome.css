@@ -116,6 +116,7 @@ header a:hover{
 #nuestras-reservas{
     background-color: rgb(30, 30, 30);
     color: white;
+    text-align: center;
 }
 
 #nuestras-reservas .container{
