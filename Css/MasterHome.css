@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box; /* No crece mas haya del tamaño que yo le dí */
+}
+
+html{
+    scroll-behavior: smooth; /* Hace que al pasar de un indice a otro vaya mas lento */
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Quita todos los bordes que tenga en las esquinas etc */
+}
+
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.7em; }
+h3{ font-size: 2em; }
+p{ font-size: 1.25em; }
+ul{ list-style: none;} /* Le quitamos los puntitos de delante de las listas */
+li{ font-size: 1.25em; }
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px; /* Arriba/abajo , Ancho/costados */
+    border-radius: 10px;
+    border: 1px slid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5); /* Le da un sombreado a los botones por detras */
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+/* Hasta la Linea 32 son pasos basicos que siempre hay que llevar a cabo */
+
+/* Aqui empezamos con el Responsive */
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: blueviolet;}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px; /* Arriba/abajo , Ancho/costados */
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color:  white; 
+    /* Le da un toque oscuro a la imagen */
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Img/1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#hero h1{
+    color: white;
+}
+
+ /* Somos Programadores web posicionado en el centro con margenes */
+#somos-disco .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestras-reservas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+#nuestras-reservas .container{
+    padding: 150px 12px;
+}
+
+#nuestras-reservas .h2{
+    margin-top:  0;
+    font-size: 3.2em;
+}
+
+#nuestras-reservas .p{
+    display: none;
+}
+
+/*
+#nuestras-reservas .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}*/
+
+/* Esto lo que hace es que coje el primer div donde poner Carta */
+.carta:first-child{
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Img/2.jpeg");
+
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 25px;
+    border-radius: 15px;
+}
+
+/* Aqui el 2 div carta */
+.carta:nth-child(2){
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Img/2.jpeg");
+
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* Aqui el 3 div carta */
+.carta:nth-child(3){
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Img/2.jpeg");
+
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+/* Hasta la Linea 188 la seccion 2 */
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+    background-color: rgb(30, 30, 30);
+    color:  white; 
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color:  rgb(230, 230, 230);
+}
+
+footer P{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* . */
